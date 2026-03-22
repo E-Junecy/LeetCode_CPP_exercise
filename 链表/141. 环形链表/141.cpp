@@ -13,9 +13,7 @@ public:
         ListNode* s=head;
         while(f&&f->next){
             s=s->next;
-            if(!s)return false;
             f=f->next->next;
-            if(!f)return false;
             if(f==s)return true;
         }
         return false;
